@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Prec_o_Dolar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dollar" translatesAutoresizingMaskIntoConstraints="NO" id="UBg-9r-pvt">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="341"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cotação Dólar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLV-Wf-1TS">
+                                <rect key="frame" x="48.5" y="341" width="278.5" height="65"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="65"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FzA-H6-Dqv">
+                                <rect key="frame" x="112.5" y="456" width="150" height="37"/>
+                                <color key="backgroundColor" red="0.3018176257610321" green="0.50025475025177002" blue="0.61702752113342285" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="CED-9m-UFd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="21"/>
+                                <state key="normal" title="  Atualizar Valor  ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="botaoAtualizarValor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HSN-TP-Jga"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="FzA-H6-Dqv" firstAttribute="top" secondItem="RLV-Wf-1TS" secondAttribute="bottom" constant="50" id="7Uz-Oz-Pmy"/>
+                            <constraint firstItem="UBg-9r-pvt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="U0H-S0-CGa"/>
+                            <constraint firstItem="UBg-9r-pvt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y40-Zd-QCA"/>
+                            <constraint firstItem="RLV-Wf-1TS" firstAttribute="top" secondItem="UBg-9r-pvt" secondAttribute="bottom" id="cWI-ih-ruj"/>
+                            <constraint firstItem="FzA-H6-Dqv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hFB-Mb-voG"/>
+                            <constraint firstAttribute="trailing" secondItem="UBg-9r-pvt" secondAttribute="trailing" id="lnM-d9-P6b"/>
+                            <constraint firstItem="RLV-Wf-1TS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="40" id="mhg-hK-jSL"/>
+                            <constraint firstItem="RLV-Wf-1TS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xQB-3b-1ih"/>
+                            <constraint firstItem="UBg-9r-pvt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ySP-z0-FoG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="botaoOutletAtualizarValor" destination="FzA-H6-Dqv" id="rat-lW-zwW"/>
+                        <outlet property="valorDolarLabel" destination="RLV-Wf-1TS" id="6vA-JG-BG8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="72.991071428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dollar" width="1920" height="1346"/>
+    </resources>
+</document>
